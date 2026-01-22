@@ -1,0 +1,62 @@
+[
+  {
+    "text": "You can reach John Smith at john.smith@acme.com or call him at 555-123-4567",
+    "expected": {
+      "name": "John Smith",
+      "email": "john.smith@acme.com",
+      "phone": "555-123-4567",
+      "found_in_database": true,
+      "company": "Acme Corporation"
+    }
+  },
+  {
+    "text": "Contact Jane Doe at jane.doe@global.com, phone: 555-234-5678",
+    "expected": {
+      "name": "Jane Doe",
+      "email": "jane.doe@global.com",
+      "phone": "555-234-5678",
+      "found_in_database": true,
+      "company": "Global Industries"
+    }
+  },
+  {
+    "text": "For inquiries, email help@example.com",
+    "expected": {
+      "name": null,
+      "email": "help@example.com",
+      "phone": null,
+      "found_in_database": false,
+      "company": null
+    }
+  },
+  {
+    "text": "Call Robert Johnson at 555-345-6789 for more information",
+    "expected": {
+      "name": "Robert Johnson",
+      "email": null,
+      "phone": "555-345-6789",
+      "found_in_database": true,
+      "company": "Sunrise Consulting"
+    }
+  },
+  {
+    "text": "Alex Thompson is our new hire, reach them at alex@newco.com",
+    "expected": {
+      "name": "Alex Thompson",
+      "email": "alex@newco.com",
+      "phone": null,
+      "found_in_database": false,
+      "company": null
+    }
+  },
+  {
+    "text": "Michael Brown can help you, his email is mbrown@mountain.com and number is 555-567-8901",
+    "expected": {
+      "name": "Michael Brown",
+      "email": "mbrown@mountain.com",
+      "phone": "555-567-8901",
+      "found_in_database": true,
+      "company": "Mountain Software"
+    }
+  }
+]
